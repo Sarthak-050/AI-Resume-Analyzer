@@ -329,13 +329,6 @@ Unlike traditional resume analyzers, this project focuses on producing practical
 
 ---
 
-# 👨‍💻 Author
-
-**Yuvan Jain**
-
-GitHub: https://github.com/yuvanjain1206
-
----
 
 ⭐ **If you found this project useful, consider giving it a Star!**
 
