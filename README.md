@@ -1,4 +1,4 @@
-# 🚀 AI Resume Analyzer
+#  AI Resume Analyzer
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js)
@@ -34,9 +34,9 @@ Upload your resume to receive an AI-generated ATS score, identify missing skills
 
 ---
 
-## 🤖 AI-Powered Tools
+##  AI-Powered Tools
 
-### 🎯 Job Description Matching
+###  Job Description Matching
 
 Compare your resume with any job description and receive
 
@@ -46,7 +46,7 @@ Compare your resume with any job description and receive
 
 ---
 
-### ✍️ AI Resume Rewrite
+###  AI Resume Rewrite
 
 Convert weak resume bullet points into stronger ATS-friendly alternatives using AI.
 
@@ -62,7 +62,7 @@ After
 
 ---
 
-### 👥 Multi-Agent Hiring Panel
+###  Multi-Agent Hiring Panel
 
 Instead of relying on a single AI response, the project creates **three independent AI reviewers**.
 
@@ -76,13 +76,13 @@ A final synthesis combines their opinions and highlights where they agree or dis
 
 ---
 
-### 📈 Resume Version History
+###  Resume Version History
 
 Track multiple versions of your resume and compare improvements over time.
 
 ---
 
-## 📊 Dashboard
+##  Dashboard
 
 - Total Uploaded Resumes
 - Average ATS Score
@@ -91,14 +91,14 @@ Track multiple versions of your resume and compare improvements over time.
 
 ---
 
-## ☁️ Storage
+##  Storage
 
 - Cloudinary File Storage
 - MongoDB Atlas Database
 
 ---
 
-## 🎨 User Experience
+##  User Experience
 
 - Fully Responsive
 - Dark UI
@@ -110,7 +110,7 @@ Track multiple versions of your resume and compare improvements over time.
 
 ---
 
-# 📸 Screenshots
+#  Screenshots
 
 ## Landing Page
 
