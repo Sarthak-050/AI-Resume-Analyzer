@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Ink — warm charcoal, no blue cast */
+  --color-ink-50: #f2f1ef;
+  --color-ink-100: #e6e4e1;
+  --color-ink-200: #cfccc7;
+  --color-ink-300: #aca79f;
+  --color-ink-400: #948d82;
+  --color-ink-500: #6b6459;
+  --color-ink-600: #4f4a41;
+  --color-ink-700: #37332c;
+  --color-ink-800: #221f1a;
+  --color-ink-900: #16130f;
+  --color-ink-950: #0d0b08;
+
+  /* Brand — vivid violet/fuchsia, premium and distinctive */
+  --color-brand-50: #fdf2ff;
+  --color-brand-100: #fce7ff;
+  --color-brand-200: #f5d0fe;
+  --color-brand-300: #f0abfc;
+  --color-brand-400: #e879f9;
+  --color-brand-500: #d946ef;
+  --color-brand-600: #c026d3;
+  --color-brand-700: #a21caf;
+  --color-brand-800: #86198f;
+  --color-brand-900: #701a75;
+
+  /* Scan — warm emerald green, used for score gauge / success */
+  --color-scan-50: #ecfdf5;
+  --color-scan-100: #d1fae5;
+  --color-scan-300: #6ee7b7;
+  --color-scan-400: #34d399;
+  --color-scan-500: #16a34a;
+  --color-scan-600: #15803d;
+  --color-scan-700: #166534;
+
+  --color-amber-signal: #d97706;
+  --color-amber-soft: #fbbf24;
+  --color-rose-signal: #e11d48;
+  --color-rose-soft: #fb7185;
+
+  --radius-card: 1rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink-100);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.4s ease;
+  background-color: var(--color-ink-950);
+  background-image:
+    radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--color-brand-600) 22%, transparent) 0%, transparent 45%),
+    radial-gradient(circle at 85% 25%, color-mix(in srgb, var(--color-scan-600) 16%, transparent) 0%, transparent 40%),
+    radial-gradient(circle at 50% 90%, color-mix(in srgb, var(--color-brand-700) 14%, transparent) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.font-numeric {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes scan-sweep {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+.animate-scan-sweep {
+  animation: scan-sweep 2.4s ease-in-out infinite;
+}
+
+/* ===== Theme Variants ===== */
+
+[data-theme="sunset"] {
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
+  --color-brand-500: #f97316;
+  --color-brand-600: #ea580c;
+  --color-brand-700: #c2410c;
+  --color-brand-800: #9a3412;
+  --color-brand-900: #7c2d12;
+
+  --color-scan-50: #fff1f2;
+  --color-scan-100: #ffe4e6;
+  --color-scan-300: #fda4af;
+  --color-scan-400: #fb7185;
+  --color-scan-500: #e11d48;
+  --color-scan-600: #be123c;
+  --color-scan-700: #9f1239;
+}
+
+[data-theme="forest"] {
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-800: #065f46;
+  --color-brand-900: #064e3b;
+
+  --color-scan-50: #f7fee7;
+  --color-scan-100: #ecfccb;
+  --color-scan-300: #bef264;
+  --color-scan-400: #a3e635;
+  --color-scan-500: #84cc16;
+  --color-scan-600: #65a30d;
+  --color-scan-700: #4d7c0f;
+}
+
+[data-theme="royal"] {
+  --color-brand-50: #faf5ff;
+  --color-brand-100: #f3e8ff;
+  --color-brand-200: #e9d5ff;
+  --color-brand-300: #d8b4fe;
+  --color-brand-400: #c084fc;
+  --color-brand-500: #a855f7;
+  --color-brand-600: #9333ea;
+  --color-brand-700: #7e22ce;
+  --color-brand-800: #6b21a8;
+  --color-brand-900: #581c87;
+
+  --color-scan-50: #fffbeb;
+  --color-scan-100: #fef3c7;
+  --color-scan-300: #fcd34d;
+  --color-scan-400: #fbbf24;
+  --color-scan-500: #d97706;
+  --color-scan-600: #b45309;
+  --color-scan-700: #92400e;
+}
+
+[data-theme="midnight"] {
+  --color-brand-50: #eef0ff;
+  --color-brand-100: #e0e3ff;
+  --color-brand-200: #c5cafe;
+  --color-brand-300: #a2a8fc;
+  --color-brand-400: #8388f7;
+  --color-brand-500: #6a63ee;
+  --color-brand-600: #5850e0;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #362da3;
+  --color-brand-900: #262368;
+
+  --color-scan-50: #effcfa;
+  --color-scan-100: #cbf6ee;
+  --color-scan-300: #7ee2d1;
+  --color-scan-400: #3dc9b3;
+  --color-scan-500: #0d9488;
+  --color-scan-600: #0a7a71;
+  --color-scan-700: #0a6058;
+}
