@@ -235,17 +235,7 @@ frontend/
 
 ---
 
-# 🚀 Getting Started
-
-## Clone Repository
-
-```bash
-git clone https://github.com/yuvanjain1206/ai-resume-analyzer.git
-
-cd ai-resume-analyzer
-```
-
----
+# Getting Started
 
 ## Backend
 
